@@ -36,6 +36,7 @@
 
 #endif
 
+#include <stdbool.h>
 
 //
 // The packed attribute forces structures to be packed into the minimum 
@@ -62,13 +63,13 @@
 
 #include <inttypes.h>
 
-#ifdef __cplusplus
+//#ifdef __cplusplus
 
-// Use builtin bool type with C++.
+// Use builtin bool type with C++ and stdbool.h
 
 typedef bool boolean;
 
-#else
+/*#else
 
 typedef enum 
 {
@@ -77,7 +78,7 @@ typedef enum
 	undef	= 0xFFFFFFFF
 } boolean;
 
-#endif
+#endif*/
 
 typedef uint8_t byte;
 
